@@ -1,0 +1,6 @@
+.mason{
+    width:30%; 
+    image-rendering: pixelated;
+    user-select: none;
+    pointer-events: none;
+}

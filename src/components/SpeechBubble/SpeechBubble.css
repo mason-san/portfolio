@@ -1,0 +1,20 @@
+.speech-bubble{
+    background: white; 
+    color: black; 
+
+    padding: 12px 18px;
+
+    border-radius: 18px;
+
+    font-weight: 600;
+
+    font-size: 1rem;
+
+    position: absolute;
+
+    top: 4px;
+
+    left: 56%;
+
+    transform: translateX(-50%);
+}
