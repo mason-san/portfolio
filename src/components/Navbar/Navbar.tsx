@@ -1,47 +1,52 @@
-import "./Navbar.css"
-import { motion } from "motion/react"
+import "./Navbar.css";
+import { motion } from "motion/react";
 
 type NavbarProps = {
-    expanded: boolean; 
-}
+  expanded: boolean;
+};
 
-export default function Navbar({ expanded } : NavbarProps){
-    console.log("FROM NAVBAR: " + expanded);
+export default function Navbar({ expanded }: NavbarProps) {
 
-    return(
+  return (
 
-        <nav className="navbar">
-            <motion.div className="navbar-pill"
-                animate={{
-                    width: expanded ? 860: 120,
-                }} 
-                transition={{
-                    duration: 0.35
-                }}
-            >
-                <div className="left">
-                    <div className="logo">
-                        MASON
-                    </div>
-                </div>
+    <nav className="navbar">
+      <motion.div
+        className="navbar-wrapper"
+        animate={{
+          width: expanded ? 760 : 140,
+        }}
+        transition={{
+          duration: 0.45,
+          ease: "easeInOut",
+        }}
+      >
+        <div className={`navbar-pill ${expanded ? "expanded" : "collapsed"}`}>
+          <div className="logo">
+            MASON
+          </div>
 
-                <motion.div 
-                    className="links"
-                    animate={{
-                        opacity: expanded ? 1 : 0,
-                        x: expanded ? 0 : 20,
-                    }}
-                    transition={{
-                        delay: 0.2,
-                        duration: 0.25,
-                    }}
-                >
-                    <a>Home</a>
-                    <a>How I Think</a>
-                    <a>Contact</a>
-                </motion.div>
+          <motion.div
+            className="links"
+            initial={false}
+            animate={{
+              opacity: expanded ? 1 : 0,
+              x: expanded ? 0 : 20,
+            }}
+            transition={{
+              duration: 0.25,
+            }}
+          >
+            <a className="nav-link">Home</a>
+            <a className="nav-link">How I Think</a>
+            <a className="nav-link">Contact</a>
+          </motion.div>
 
-            </motion.div>
-        </nav>
-    )
+        </div>
+
+      </motion.div>
+
+    </nav>
+
+
+  );
 }
