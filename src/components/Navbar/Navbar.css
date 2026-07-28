@@ -11,7 +11,7 @@
 }
 
 .navbar-pill {
-    padding: 12px 28px; 
+    padding: 10px 28px; 
 
     border-radius: 9999px;
 
@@ -26,4 +26,20 @@
     font-weight: 600; 
 
     letter-spacing: 0.08em;
+
+    overflow: hidden;
+    display: flex; 
+    align-items: center;
+
+    width: 100%; 
+    box-sizing: border-box;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex; 
+    gap: 2rem;
+    align-items: center;
 }

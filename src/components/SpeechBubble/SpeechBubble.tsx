@@ -1,9 +1,24 @@
 import "./SpeechBubble.css"
+import {motion} from "motion/react"
 
-export default function SpeechBubble(){
+type SpeechBubbleProps = {
+    visible: boolean; 
+}
+
+export default function SpeechBubble({ visible } : SpeechBubbleProps){
     return(
-        <div className="speech-bubble">
+        <motion.div
+            animate={{
+                opacity: visible ? 1 : 0,
+                y: visible ? 0 : -15,
+            }}
+            transition={{
+                duration: 0.2,
+            }} 
+            
+            className="speech-bubble"
+        >
             Hey! 👋
-        </div>
+        </motion.div>
     )
 }

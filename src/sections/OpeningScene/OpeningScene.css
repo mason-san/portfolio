@@ -2,9 +2,7 @@
     height: 100vh; 
 
     display: flex ;
-
     justify-content: center;
-
     align-items: center;
 
     background: black;
@@ -12,11 +10,9 @@
 }
 
 .mason-container {
-    position: relative; 
-
-    display: inline-flex;
-
-    justify-content: center;
-
+    display: flex;
+    flex-direction: column;
     align-items: center; 
+
+    transform: translateX(11%); 
 }
