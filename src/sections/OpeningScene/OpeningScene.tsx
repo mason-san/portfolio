@@ -4,9 +4,9 @@ import Navbar from "../../components/Navbar/Navbar"
 import useScrollTrigger from "../../hooks/useScrollTrigger"
 import "./OpeningScene.css"
 
-export default function OpeningScene(){
+export default function OpeningScene() {
     const hasScrolled = useScrollTrigger();
-    return(
+    return (
         <section className="opening-scene">
             <Navbar expanded={hasScrolled} />
             <div className="mason-container">
