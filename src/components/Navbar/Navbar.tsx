@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import { motion } from "motion/react";
+import mason from "../../assets/mason/mazin_sit_laptop.png";
 
 type NavbarProps = {
   expanded: boolean;
@@ -13,7 +14,7 @@ export default function Navbar({ expanded }: NavbarProps) {
       <motion.div
         className="navbar-wrapper"
         animate={{
-          width: expanded ? 760 : 140,
+          width: expanded ? 720 : 140,
         }}
         transition={{
           duration: 0.45,
@@ -21,9 +22,12 @@ export default function Navbar({ expanded }: NavbarProps) {
         }}
       >
         <div className={`navbar-pill ${expanded ? "expanded" : "collapsed"}`}>
-          <div className="logo">
-            MASON
-          </div>
+          <a className="logo-group" href="#about" aria-label="Mazin Moosa — home">
+            {expanded && <img src={mason} alt="" className="navbar-mason" />}
+            <div className="logo">
+              MASON
+            </div>
+          </a>
 
           <motion.div
             className="links"
@@ -36,9 +40,9 @@ export default function Navbar({ expanded }: NavbarProps) {
               duration: 0.25,
             }}
           >
-            <a className="nav-link">Home</a>
-            <a className="nav-link">How I Think</a>
-            <a className="nav-link">Contact</a>
+            <a className="nav-link" href="#about">About</a>
+            <a className="nav-link" href="#projects">Projects</a>
+            <a className="nav-link" href="#contact">Contact</a>
           </motion.div>
 
         </div>

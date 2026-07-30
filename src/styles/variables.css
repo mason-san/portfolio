@@ -1,0 +1,35 @@
+:root {
+  /* COLORS */
+
+  --bg: #101010;
+
+  --surface: #121212;
+
+  --surface-light: #1c1c1c;
+
+  --text: #ffffff;
+
+  --text-muted: #b8b8b8;
+
+  --border: rgba(255, 255, 255, 0.1);
+
+  /* SPACING */
+
+  --radius: 24px;
+
+  --radius-small: 12px;
+
+  /* ANIMATION */
+
+  --transition: 250ms ease;
+
+  --bg-primary: #0b0b0c;
+  --surface: #161616;
+  --text-primary: #f5f5f5;
+  --text-secondary: #a6a6a6;
+  --text-muted: #737373;
+
+  --border: rgba(255, 255, 255, 0.1);
+
+  --shadow: rgba(0, 0, 0, 0.45);
+}

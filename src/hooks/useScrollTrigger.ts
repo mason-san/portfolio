@@ -14,9 +14,7 @@ export default function useScrollTrigger(){
 
         window.addEventListener("scroll", handleScroll);
 
-        return (() => {
-            window.addEventListener("scroll", handleScroll);
-        })
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []); 
 
     return hasScrolled; 
