@@ -12,6 +12,7 @@ interface Project {
 const projects: Project[] = [
   { name: "EvoStrategy", description: "A platform for turning ambitious ideas into deliberate, actionable strategy.", github: "https://github.com/mason-san" },
   { name: "Attendance Calculator", description: "A simple web app to calculate attendance percentage and see how many classes can be missed.", github: "https://github.com/mason-san/Attendance-Calculator", site: "attendance-calculator-tau.vercel.app" },
+  { name: "JobLeveling", description: "AI-powered resume matcher using semantic similarity to evaluate resumes against job descriptions.", github: "https://github.com/mason-san/JobLeveling" },
 ];
 
 export default function Homepage() {

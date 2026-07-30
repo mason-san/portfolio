@@ -1,6 +1,6 @@
 .speech-bubble{
-    background: white; 
-    color: black; 
+    background: var(--btn-bg); 
+    color: var(--btn-text); 
 
     padding: 12px 18px;
 
@@ -9,4 +9,7 @@
     font-weight: 600;
 
     font-size: 1rem;
+    box-shadow: 0 8px 25px var(--shadow);
+    border: 1px solid var(--btn-border);
+    transition: var(--transition);
 }

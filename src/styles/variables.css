@@ -1,35 +1,72 @@
 :root {
-  /* COLORS */
+  /* User Light Mode Palette Hex Codes */
+  --forest-dark: #14281D;
+  --forest-sage: #355834;
+  --olive-gold: #6E633D;
+  --warm-khaki: #C2A878;
+  --sage-white: #F1F5F2;
 
-  --bg: #101010;
+  /* Light Theme System (Default) */
+  --bg: #F1F5F2;
+  --bg-secondary: #E5EBE7;
+  --surface: #FFFFFF;
+  --surface-hover: #F6F8F6;
+  --surface-glass: rgba(255, 255, 255, 0.85);
+  
+  --text: #14281D;
+  --text-secondary: #355834;
+  --text-muted: #6E633D;
+  
+  --accent: #355834;
+  --accent-light: #C2A878;
+  --accent-hover: #14281D;
 
-  --surface: #121212;
+  --btn-bg: #355834;
+  --btn-hover: #14281D;
+  --btn-text: #F1F5F2;
+  --btn-border: rgba(53, 88, 52, 0.25);
+  --btn-shadow: rgba(20, 40, 29, 0.2);
 
-  --surface-light: #1c1c1c;
-
-  --text: #ffffff;
-
-  --text-muted: #b8b8b8;
-
-  --border: rgba(255, 255, 255, 0.1);
-
-  /* SPACING */
+  --border: rgba(53, 88, 52, 0.16);
+  --border-active: rgba(20, 40, 29, 0.35);
 
   --radius: 24px;
-
   --radius-small: 12px;
-
-  /* ANIMATION */
-
-  --transition: 250ms ease;
-
-  --bg-primary: #0b0b0c;
-  --surface: #161616;
-  --text-primary: #f5f5f5;
-  --text-secondary: #a6a6a6;
-  --text-muted: #737373;
-
-  --border: rgba(255, 255, 255, 0.1);
-
-  --shadow: rgba(0, 0, 0, 0.45);
+  --transition: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow: 0 10px 30px -5px rgba(20, 40, 29, 0.08);
 }
+
+[data-theme="dark"] {
+  /* Dark Theme System (#000000 Black, #34181A / #360A14 Rich Mahogany & Light Rose Accent) */
+  --rich-mahogany: #34181A;
+  --deep-mahogany: #360A14;
+  --pure-black: #000000;
+
+  --bg: #000000;
+  --bg-secondary: #0d0305;
+  --surface: #18070a;
+  --surface-hover: #290d12;
+  --surface-glass: rgba(26, 7, 10, 0.82);
+  
+  --text: #F8F8F5;
+  --text-secondary: #E5D8DB;
+  --text-muted: #B89B9F;
+  
+  /* Lighter, vibrant rich mahogany accent so it pops clearly */
+  --accent: #c46473;
+  --accent-light: #d98592;
+  --accent-hover: #e09ba6;
+
+  --btn-bg: #4a191f;
+  --btn-hover: #732832;
+  --btn-text: #F8F8F5;
+  --btn-border: rgba(196, 100, 115, 0.35);
+  --btn-shadow: rgba(196, 100, 115, 0.25);
+
+  --border: rgba(255, 255, 255, 0.14);
+  --border-active: rgba(224, 155, 166, 0.45);
+
+  --shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.85);
+}
+
+
