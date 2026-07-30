@@ -60,7 +60,7 @@ export default function Homepage() {
         <div className="content">
           <img className="contact-mason" src={wave} alt="Mason waving" />
           <p className="eyebrow">Get in touch</p><h2 id="contact-title">Let&apos;s build something useful.</h2>
-          <div className="contact-links"><a href="https://github.com/mason-san" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="mailto:mazinmoosa63@gmail.com">Email <span aria-hidden="true">↗</span></a><a href="#about">Resume <span aria-hidden="true">↗</span></a></div>
+          <div className="contact-links"><a href="https://github.com/mason-san" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/mazin-moosa-57b35827b/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://x.com/MasonBattery" target="_blank" rel="noreferrer">Twitter <span aria-hidden="true">↗</span></a><a href="mailto:mazinmoosa63@gmail.com">Email <span aria-hidden="true">↗</span></a><a href="https://drive.google.com/file/d/1SBM5xg-gLz6KsjF_O_o5a3SR7lfORMFO/view?usp=sharing" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a></div>
         </div>
       </section>
     </main>
